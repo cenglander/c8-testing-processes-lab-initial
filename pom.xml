@@ -32,11 +32,11 @@
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/io.camunda/zeebe-process-test-extension-testcontainer -->
-        <dependency>
+<!--        <dependency>
             <groupId>io.camunda</groupId>
             <artifactId>zeebe-process-test-extension-testcontainer</artifactId>
             <version>8.2.16</version>
-        </dependency>
+        </dependency>-->
 
         <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter -->
         <dependency>

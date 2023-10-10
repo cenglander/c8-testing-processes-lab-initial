@@ -14,9 +14,9 @@ import io.camunda.zeebe.process.test.assertions.BpmnAssert;
 import io.camunda.zeebe.process.test.assertions.DeploymentAssert;
 
 //When using testcontatiners (Java 8+ but bellow 17)
-import io.camunda.zeebe.process.test.extension.testcontainer.ZeebeProcessTest;
+//import io.camunda.zeebe.process.test.extension.testcontainer.ZeebeProcessTest;
 //When using Embedded Test Engine (Java 17+)
-//import io.camunda.zeebe.process.test.extension.ZeebeProcessTest;
+import io.camunda.zeebe.process.test.extension.ZeebeProcessTest;
 
 import io.camunda.zeebe.process.test.filters.RecordStream;
 import org.junit.jupiter.api.BeforeEach;
@@ -93,7 +93,6 @@ public class PaymentProcessTest {
           "cardNumber", CARD_NR,
           "cvc", CVC);
         JobHandler creditCardHandler = new CreditCardChargingHandler();
-
 
         //when
         ProcessInstanceEvent processInstance = startInstanceBefore("PaymentProcess", startVars, "Gateway_CreditSufficient");
